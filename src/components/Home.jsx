@@ -24,7 +24,7 @@ export default function Home(props){
 
 
         <div className='absolute -top-10 w-full h-[700px] z-0 pointer-events-none'>  
-              {/* <Spline scene="https://prod.spline.design/HUEsevAbPUK3hGU6/scene.splinecode" /> */}
+              <Spline scene="https://prod.spline.design/HUEsevAbPUK3hGU6/scene.splinecode" />
         </div>
         <div className='absolute bottom-5 right-0 bg-primary justify-center w-56 h-[150px]'>
 

@@ -19,7 +19,8 @@ export default {
         sriracha: ['Sriracha', 'cursive'],
       },
       animation: {
-        'scroll-horizontal': 'scroll-horizontal 20s linear infinite',
+        'scroll-horizontal': 'scroll-horizontal 30s linear infinite',
+        
       },
       keyframes: {
         'scroll-horizontal': {

@@ -18,8 +18,8 @@ function App() {
       <Home name={shopName}/>
       <About name={shopName}/>
       <Services/>
-      <Reviews/>
       <OurWorks/>
+      <Reviews/>
       <Info/>
       
       <Routes>

@@ -1,7 +1,7 @@
 {
   "name": "studio_kobistudio",
   "private": true,
-  "homepage": "https://player127-monster.github.io/studio_gobistudio/",
+  "homepage": "https://player127-monster.github.io/gobistudio/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {

@@ -24,12 +24,12 @@ import grad4 from '../assets/Services/grad4.jpg';
 
 export default function Services(){
 
-    return<section id="services" className="p-10 pt-0 text-textColor">
-    <div className="grid w-full md:grid-cols-8 md:gap-10 px-2 py-2 md:px-4 md:py-6">
+    return<section id="services" className="p-5 pt-0 text-textColor">
+    <div className="flex flex-col gap-5 md:grid w-full md:grid-cols-8 md:gap-10 px-0 md:px-4 md:py-6">
 
         {/* Title */}
-        <div className="group w-full md:col-span-4 md:row-span-1 md:flex md:items-center md:pb-5">
-        <p className="text-2xl md:text-6xl text-white md:text-textColor font-bold items-start group-hover:text-white group-hover:text-7xl transition-all duration-700">Our Services</p>
+        <div className="group w-full md:col-span-4 md:row-span-1 md:flex md:items-center pt-10 md:pb-5">
+        <p className="text-4xl md:text-6xl text-white md:text-textColor font-bold items-start md:group-hover:text-white md:group-hover:text-7xl transition-all duration-700">Our Services</p>
         </div>
 
         {/* Top Right Image */}
@@ -47,15 +47,15 @@ export default function Services(){
                 </div>
 
                 <div className="absolute bottom-4 left-4 z-10">
-                <p className="text-4xl text-textColor font-bold group-hover:text-white group-hover:text-5xl transition-all duration-700">Model Shoot</p>
+                <p className="text-4xl text-white md:text-textColor font-bold group-hover:text-white group-hover:text-5xl transition-all duration-700">Model Shoot</p>
                 </div>
             </div>
         </div>
 
 
         {/* Middle Left Image */}
-        <div id='wedding-shoot' className="col-span-4 row-span-2 pt-5">
-            <div className="group bg-white w-full h-[600px] relative overflow-hidden rounded-xl">
+        <div id='wedding-shoot' className="md:col-span-4 md:row-span-2 pt-5">
+            <div className="group bg-white w-full md:h-[600px] relative overflow-hidden rounded-xl">
                 <div className="flex w-[200%] animate-scroll-horizontal">
                 {[wed1,wed2,wed3,wed1,wed2,wed3].map((img, idx) => (
                     <img
@@ -68,13 +68,13 @@ export default function Services(){
                 </div>
 
                 <div className="absolute bottom-4 left-4 z-10">
-                <p className="text-4xl text-textColor font-bold group-hover:text-white group-hover:text-5xl transition-all duration-700">Wedding Shoot</p>
+                <p className="text-4xl text-white md:text-textColor font-bold group-hover:text-white group-hover:text-5xl transition-all duration-700">Wedding Shoot</p>
                 </div>
             </div>
         </div>
 
         {/* Middle Right Image */}
-        <div id='commercial-shoot' className="col-span-4 row-span-2 pt-0">
+        <div id='commercial-shoot' className="md:col-span-4 md:row-span-2 pt-0">
         <div className="group bg-white w-full h-[700px] relative overflow-hidden rounded-xl">
                 <div className="flex w-[200%] animate-scroll-horizontal">
                 {[portrait1,portrait2].map((img, idx) => (
@@ -88,7 +88,7 @@ export default function Services(){
                 </div>
 
                 <div className="absolute bottom-4 left-4 z-10">
-                <p className="text-4xl text-textColor font-bold group-hover:text-white group-hover:text-5xl transition-all duration-700">Portraits</p>
+                <p className="text-4xl text-white md:text-textColor font-bold group-hover:text-white group-hover:text-5xl transition-all duration-700">Portraits</p>
                 </div>
             </div>
         </div>
@@ -108,7 +108,7 @@ export default function Services(){
                 </div>
 
                 <div className="absolute bottom-4 left-4 z-10 ">
-                <p className="text-4xl text-textColor font-bold group-hover:text-white group-hover:text-5xl transition-all duration-700">Graduation Shoot</p>
+                <p className="text-4xl text-white md:text-textColor font-bold group-hover:text-white group-hover:text-5xl transition-all duration-700">Graduation Shoot</p>
                 </div>
             </div>
         </div>
@@ -128,7 +128,7 @@ export default function Services(){
                 </div>
 
                 <div className="absolute bottom-4 left-4 z-10">
-                <p className="text-4xl text-textColor font-bold group-hover:text-white group-hover:text-5xl transition-all duration-700">Pre-Wedding Shoot</p>
+                <p className="text-4xl text-white md:text-textColor font-bold group-hover:text-white group-hover:text-5xl transition-all duration-700">Pre-Wedding Shoot</p>
                 </div>
             </div>
         </div>
@@ -148,7 +148,7 @@ export default function Services(){
                 </div>
 
                 <div className="absolute bottom-4 left-4 z-10 ">
-                <p className="text-4xl text-textColor font-bold group-hover:text-white group-hover:text-5xl transition-all duration-700">Product Shoot</p>
+                <p className="text-4xl text-white md:text-textColor font-bold group-hover:text-white group-hover:text-5xl transition-all duration-700">Product Shoot</p>
                 </div>
             </div>
         </div>
@@ -168,7 +168,7 @@ export default function Services(){
                 </div>
 
                 <div className="absolute bottom-4 left-4 z-10">
-                <p className="text-4xl text-textColor font-bold group-hover:text-white group-hover:text-5xl transition-all duration-700">Photo Frames</p>
+                <p className="text-4xl text-white md:text-textColor font-bold group-hover:text-white group-hover:text-5xl transition-all duration-700">Photo Frames</p>
                 </div>
             </div>
         </div>

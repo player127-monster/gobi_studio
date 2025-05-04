@@ -23,11 +23,29 @@ export default function Home(props){
         </div>
 
 
-        <div className='absolute -top-10 w-full h-[700px] z-0 pointer-events-none'>  
-              <Spline scene="https://prod.spline.design/HUEsevAbPUK3hGU6/scene.splinecode" />
-        </div>
-        <div className='absolute sm:bottom-8 bottom-40 right-0 md:bottom-96 lg:bottom-5 lg:right-0 bg-primary justify-center w-56 h-[170px] md:h-[250px] lg:h-[150px]'>
+        {/* Spline 3D Background */}
+            <div className="absolute -top-10 w-full h-[700px] z-0 pointer-events-none">
+            <Spline scene="https://prod.spline.design/HUEsevAbPUK3hGU6/scene.splinecode" />
+            </div>
 
-        </div>
+            {/* Watermark Blocker */}
+         <div
+            className="
+                absolute 
+                right-0 
+                bottom-5 
+                top-[600px]
+                w-72 h-32          /* Base: width 18rem, height 6rem */
+                sm:w-80 sm:h-32    /* Small screens: wider and taller */
+                md:w-96 md:h-32    /* Medium screens: even larger */
+                lg:w-[30rem] lg:h-40 lg:right-0 lg:bottom-5 /* Large screens: custom width/height */
+                bg-primary 
+                z-05 
+                pointer-events-none
+            "
+            ></div>
+
+
+
     </section>
 }

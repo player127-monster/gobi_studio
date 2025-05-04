@@ -35,11 +35,11 @@ export default function Home(props){
                 right-0 
                 bottom-5 
                 top-[600px]
-                iphone7:top-[700px]
+                iphone7:top-[600px]
                 w-72 h-32          /* Base: width 18rem, height 6rem */
                 sm:w-80 sm:h-32    /* Small screens: wider and taller */
                 md:w-96 md:h-32    /* Medium screens: even larger */
-                lg:w-[30rem] lg:h-40 lg:right-0 lg:bottom-5 /* Large screens: custom width/height */
+                lg:w-[30rem] lg:h-28 lg-right-0 lg:top-[600px] /* Large screens: custom width/height */
                 bg-primary 
                 z-05 
                 pointer-events-none

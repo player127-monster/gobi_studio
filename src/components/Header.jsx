@@ -34,7 +34,7 @@ export default function Header() {
   </div>
 
   {/* Desktop Navigation */}
-  <div className="hidden md:flex w-full justify-center items-center gap-10 py-3">
+  <div className="hidden md:flex w-full justify-center items-center gap-10 py-3 ">
     {navLinks.map((navLink, index) => (
       <Link
         key={index}
@@ -42,7 +42,7 @@ export default function Header() {
         smooth={true}
         duration={600}
         offset={-70}
-        className={`${navLink.href === "new" ? "text-green-500 hover:text-red-500" : "text-navText hover:text-white"} cursor-pointer px-8 py-1 rounded-xl text-xl font-bold transition-all duration-700`}
+        className={`${navLink.href === "new" ? "text-green-500 hover:text-red-500" : "text-navText hover:text-white"} cursor-pointer px-8 py-1 rounded-xl text-xl font-bold lg:hover:scale-110 transition-all duration-700`}
       >
         {navLink.label}
       </Link>

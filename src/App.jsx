@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './components/Home';
@@ -23,11 +23,6 @@ function App() {
       <NewArrival/>
       <Reviews/>
       <Info/>
-      
-      <Routes>
-        <Route path="/products" element={<Home name={shopName}/>} />
-      </Routes>
-
       <Footer name={shopName}/>
     </BrowserRouter>
   );

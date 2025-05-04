@@ -13,8 +13,8 @@ const NewArrival = () => {
 
     return<section id='new' className="flex flex-col w-full">
 
-        <div className='group w-full p-20'>
-            <p className="text-6xl text-white font-bold items-start group-hover:text-green-300 group-hover:text-7xl transition-all duration-700">Sublimation Printing</p>
+        <div className='group w-full p-10 md:p-20'>
+            <p className="text-2xl md:text-6xl text-white font-bold items-start group-hover:text-green-300 group-hover:text-7xl transition-all duration-700">Sublimation Printing</p>
         </div>
         
     <div className="w-full">
@@ -70,7 +70,7 @@ const NewArrival = () => {
                                 <img
                                 key={idx}
                                 src={img}
-                                className="w-[50%] h-auto rounded-2xl object-cover"
+                                className="w-[50%] h-[450px] md:h-auto rounded-2xl object-cover"
                                 alt={`scroll-img-${idx}`}
                                 />
                             ))}

@@ -25,11 +25,11 @@ import grad4 from '../assets/Services/grad4.jpg';
 export default function Services(){
 
     return<section id="services" className="p-10 pt-0 text-textColor">
-    <div className="grid grid-cols-8 gap-10 px-4 py-6">
+    <div className="grid w-full md:grid-cols-8 md:gap-10 px-2 py-2 md:px-4 md:py-6">
 
         {/* Title */}
-        <div className="group col-span-4 row-span-1 flex items-center pb-5">
-        <p className="text-6xl text-textColor font-bold items-start group-hover:text-white group-hover:text-7xl transition-all duration-700">Our Services</p>
+        <div className="group w-full md:col-span-4 md:row-span-1 md:flex md:items-center md:pb-5">
+        <p className="text-2xl md:text-6xl text-white md:text-textColor font-bold items-start group-hover:text-white group-hover:text-7xl transition-all duration-700">Our Services</p>
         </div>
 
         {/* Top Right Image */}

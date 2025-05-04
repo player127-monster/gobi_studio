@@ -27,7 +27,10 @@ export default {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-50%)' },
         },
-      }
+      },
+      screens: {
+        'iphone7': '375px',
+      },
     }
   },
   plugins: [],

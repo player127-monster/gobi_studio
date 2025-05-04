@@ -35,6 +35,7 @@ export default function Home(props){
                 right-0 
                 bottom-5 
                 top-[600px]
+                iphone7:top-[700px]
                 w-72 h-32          /* Base: width 18rem, height 6rem */
                 sm:w-80 sm:h-32    /* Small screens: wider and taller */
                 md:w-96 md:h-32    /* Medium screens: even larger */

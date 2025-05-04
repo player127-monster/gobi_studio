@@ -21,6 +21,7 @@ import grad2 from '../assets/Services/grad2.avif';
 import grad3 from '../assets/Services/grad3.jpg';
 import grad4 from '../assets/Services/grad4.jpg';
 
+
 export default function Services(){
 
     return<section id="services" className="p-10 pt-0 text-textColor">

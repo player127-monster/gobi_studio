@@ -17,6 +17,8 @@ import grad1 from '../assets/Services/grad1.avif';
 import grad2 from '../assets/Services/grad2.avif';
 import grad3 from '../assets/Services/grad3.jpg';
 import grad4 from '../assets/Services/grad4.jpg';
+import work1 from '../assets/Services/works1.jpg';
+import mug from '../assets/Services/mug.jpg';
 
 export default function Works(){
 
@@ -39,11 +41,20 @@ export default function Works(){
         {src:`${wed3}`,name:"Wedding"},
     ]
 
-    return<section id="works" className="p-5 pb-10 grid grid-cols-8 gap-3 py-3">
+    return<section id="works" className="felx flex-row pt-24 p-10">
+        <div className="group w-full flex pb-5 px-0">
+            <p className="text-6xl text-textColor font-bold items-start group-hover:text-white group-hover:text-7xl transition-all duration-500">Our Works</p>
+        </div>
+        <div className='p-5 pb-10 grid grid-cols-7 gap-4 py-3'>
+        <img src={work1} alt="Wedding Shoot" className="col-span-3 w-full h-[230px] rounded-3xl hover:scale-125 transition-all duration-500"></img>
         {
             works.map((work,index)=>(
-                <img key={index} src={work.src} alt={work.name} className="w-full h-[220px] rounded-3xl"></img>
+                <img key={index} src={work.src} alt={work.name} className="w-full h-[230px] rounded-3xl hover:scale-125 transition-all duration-500"></img>
             ))
         }
+        <img src={mug} alt="Sublimation printing" className="col-span-2 w-full h-[230px] rounded-3xl hover:scale-125 transition-all duration-500"></img>
+        
+        </div>
+        
     </section>
 }

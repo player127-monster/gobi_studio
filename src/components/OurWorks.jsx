@@ -46,7 +46,7 @@ export default function Works(){
             <p className="text-6xl text-textColor font-bold items-start group-hover:text-white group-hover:text-7xl transition-all duration-500">Our Works</p>
         </div>
         <div className='p-5 pb-10 grid grid-cols-7 gap-4 py-3'>
-        <img src={work1} alt="Wedding Shoot" className="col-span-3 w-full h-[230px] rounded-3xl hover:scale-125 transition-all duration-500"></img>
+        <img src={work1} alt="Wedding Shoot" className="col-span-3 w-full h-[230px] rounded-3xl hover:scale-110 transition-all duration-500"></img>
         {
             works.map((work,index)=>(
                 <img key={index} src={work.src} alt={work.name} className="w-full h-[230px] rounded-3xl hover:scale-125 transition-all duration-500"></img>

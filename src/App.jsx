@@ -7,6 +7,7 @@ import Services from './components/Services';
 import Reviews from './components/Reviews';
 import OurWorks from './components/OurWorks';
 import Info from './components/Info';
+import NewArrival from './components/NewArrival';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
       <About name={shopName}/>
       <Services/>
       <OurWorks/>
+      <NewArrival/>
       <Reviews/>
       <Info/>
       

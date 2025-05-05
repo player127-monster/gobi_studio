@@ -1,4 +1,3 @@
-
 import frame1 from '../assets/Services/frame1.avif';
 import frame2 from '../assets/Services/frame2.avif';
 import frame3 from '../assets/Services/frame3.avif';
@@ -22,167 +21,54 @@ import grad3 from '../assets/Services/grad3.avif';
 import grad4 from '../assets/Services/grad4.avif';
 
 
-export default function Services(){
+  import ServiceCarousel from './ServiceCarousel';
+  
 
-    return<section id="services" className="p-5 pt-0 text-textColor">
-    <div className="flex flex-col gap-5 md:grid w-full md:grid-cols-8 md:gap-10 px-0 md:px-4 md:py-6">
+  
 
-        {/* Title */}
-        <div className="group w-full md:col-span-4 md:row-span-1 md:flex md:items-center pt-10 md:pb-5">
-        <p className="text-4xl md:text-6xl text-white lg:text-textColor font-bold items-start lg:group-hover:text-white lg:group-hover:text-7xl transition-all duration-700">Our Services</p>
+  export default function Services() {
+    return (
+      <section id="services" className="p-5 pt-0 text-textColor">
+        <div className="flex flex-col gap-5 md:grid w-full md:grid-cols-8 md:gap-10 px-0 md:px-4 md:py-6">
+  
+          {/* Title */}
+          <div className="group w-full md:col-span-4 md:row-span-1 md:flex md:items-center pt-10 md:pb-5">
+            <p className="text-4xl md:text-6xl text-white lg:text-textColor font-bold lg:group-hover:text-white lg:group-hover:text-7xl transition-all duration-700">
+              Our Services
+            </p>
+          </div>
+  
+          {/* Service Carousels */}
+          <div className="md:col-span-4 row-span-2 pt-5" id="model-shoot">
+            <ServiceCarousel title="Model Shoot" images={[model1, model2, model3]} height={400} imageWidth="w-1/6" />
+          </div>
+  
+          <div className="md:col-span-4 row-span-2 pt-5" id="wedding-shoot">
+            <ServiceCarousel title="Wedding Shoot" images={[wed1, wed2, wed3]} height={600} imageWidth="w-1/5" />
+          </div>
+  
+          <div className="md:col-span-4 row-span-2 pt-0" id="commercial-shoot">
+            <ServiceCarousel title="Portraits" images={[portrait1, portrait2]} height={700} imageWidth="w-1/2" />
+          </div>
+  
+          <div className="col-span-4 row-span-2" id="graduation-shoot">
+            <ServiceCarousel title="Graduation Shoot" images={[grad1, grad2, grad3, grad4]} height={700} imageWidth="w-1/5" />
+          </div>
+  
+          <div className="col-span-4 row-span-2" id="pre-wedding-shoot">
+            <ServiceCarousel title="Pre-Wedding Shoot" images={[prewed1, prewed2, prewed3]} height={800} imageWidth="w-1/2" />
+          </div>
+  
+          <div className="col-span-4 row-span-2" id="product-shoot">
+            <ServiceCarousel title="Product Shoot" images={[product1, product2, product3]} height={700} imageWidth="w-1/3" />
+          </div>
+  
+          <div className="col-span-4">
+            <ServiceCarousel title="Photo Frames" images={[frame1, frame2, frame3]} height={300} imageWidth="w-1/6" />
+          </div>
+  
         </div>
-
-        {/* Top Right Image */}
-        <div id="model-shoot" className="col-span-4 row-span-2 pt-5">
-            <div className="group bg-white w-full h-[400px] relative overflow-hidden rounded-xl">
-                <div className="flex w-[200%] animate-scroll-horizontal">
-                {[model1,model2,model3,model1,model2,model3].map((img, idx) => (
-                    <img
-                    key={idx}
-                    src={img}
-                    loading='lazy'
-                    className="w-[16.66%] h-[400px] object-cover"
-                    alt={`scroll-img-${idx}`}
-                    />
-                ))}
-                </div>
-
-                <div className="absolute bottom-4 left-4 z-10">
-                <p className="text-4xl text-white md:text-textColor font-bold lg:group-hover:text-white lg:group-hover:text-5xl transition-all duration-700">Model Shoot</p>
-                </div>
-            </div>
-        </div>
-
-
-        {/* Middle Left Image */}
-        <div id='wedding-shoot' className="md:col-span-4 md:row-span-2 pt-5">
-            <div className="group bg-white w-full md:h-[600px] relative overflow-hidden rounded-xl">
-                <div className="flex w-[200%] animate-scroll-horizontal">
-                {[wed1,wed2,wed3,wed1,wed2,wed3].map((img, idx) => (
-                    <img
-                    key={idx}
-                    src={img}
-                    loading='lazy'
-                    className="w-[18.66%] h-[600px] object-cover"
-                    alt={`scroll-img-${idx}`}
-                    />
-                ))}
-                </div>
-
-                <div className="absolute bottom-4 left-4 z-10">
-                <p className="text-4xl text-white md:text-textColor font-bold lg:group-hover:text-white lg:group-hover:text-5xl transition-all duration-700">Wedding Shoot</p>
-                </div>
-            </div>
-        </div>
-
-        {/* Middle Right Image */}
-        <div id='commercial-shoot' className="md:col-span-4 md:row-span-2 pt-0">
-        <div className="group bg-white w-full h-[700px] relative overflow-hidden rounded-xl">
-                <div className="flex w-[200%] animate-scroll-horizontal">
-                {[portrait1,portrait2].map((img, idx) => (
-                    <img
-                    key={idx}
-                    src={img}
-                    loading='lazy'
-                    className="w-[50%] h-[700px] object-cover"
-                    alt={`scroll-img-${idx}`}
-                    />
-                ))}
-                </div>
-
-                <div className="absolute bottom-4 left-4 z-10">
-                <p className="text-4xl text-white md:text-textColor font-bold lg:group-hover:text-white lg:group-hover:text-5xl transition-all duration-700">Portraits</p>
-                </div>
-            </div>
-        </div>
-
-        {/* Bottom Left Image */}
-        <div id='graduation-shoot' className="col-span-4 row-span-2">
-        <div className="group bg-white transition-all duration-700 w-full h-[700px] relative overflow-hidden rounded-xl">
-                <div className="flex w-[200%] animate-scroll-horizontal pointer-events-none">
-                {[grad1,grad3,grad2,grad4,grad1,grad3,grad2,grad4].map((img, idx) => (
-                    <img
-                    key={idx}
-                    src={img}
-                    loading='lazy'
-                    className="w-[20.66%] h-[700px] object-cover"
-                    alt={`scroll-img-${idx}`}
-                    />
-                ))}
-                </div>
-
-                <div className="absolute bottom-4 left-4 z-10 ">
-                <p className="text-4xl text-white md:text-textColor font-bold lg:group-hover:text-white lg:group-hover:text-5xl transition-all duration-700">Graduation Shoot</p>
-                </div>
-            </div>
-        </div>
-
-        {/* Bottom Right Image */}
-        <div id='pre-wedding-shoot' className="col-span-4 row-span-2">
-        <div className="group bg-white w-full h-[800px] relative overflow-hidden rounded-xl">
-                <div className="flex w-[200%] animate-scroll-horizontal">
-                {[prewed1,prewed2,prewed3,prewed1,prewed2,prewed3].map((img, idx) => (
-                    <img
-                    key={idx}
-                    src={img}
-                    loading='lazy'
-                    className="w-[50.66%] h-[800px] object-cover"
-                    alt={`scroll-img-${idx}`}
-                    />
-                ))}
-                </div>
-
-                <div className="absolute bottom-4 left-4 z-10">
-                <p className="text-4xl text-white md:text-textColor font-bold lg:group-hover:text-white lg:group-hover:text-5xl transition-all duration-700">Pre-Wedding Shoot</p>
-                </div>
-            </div>
-        </div>
-
-        {/* Bottom end Left Image */}
-        <div id='product-shoot' className="col-span-4 row-span-2">
-        <div className="group bg-white transition-all duration-700 w-full h-[700px] relative overflow-hidden rounded-xl">
-                <div className="flex w-[200%] animate-scroll-horizontal pointer-events-none">
-                {[product1,product2,product3,product1,product2,product3].map((img, idx) => (
-                    <img
-                    key={idx}
-                    src={img}
-                    loading='lazy'
-                    className="w-[30.66%] h-[700px] object-cover"
-                    alt={`scroll-img-${idx}`}
-                    />
-                ))}
-                </div>
-
-                <div className="absolute bottom-4 left-4 z-10 ">
-                <p className="text-4xl text-white md:text-textColor font-bold lg:group-hover:text-white lg:group-hover:text-5xl transition-all duration-700">Product Shoot</p>
-                </div>
-            </div>
-        </div>
-
-        {/* Bottom end Right Image */}
-        <div className="col-span-4">
-        <div className="group bg-white w-full h-[300px] relative overflow-hidden rounded-xl">
-                <div className="flex w-[200%] animate-scroll-horizontal">
-                {[frame1,frame2,frame3,frame1,frame2,frame3].map((img, idx) => (
-                    <img
-                    key={idx}
-                    src={img}
-                    loading='lazy'
-                    className="w-[16.66%] h-[300px] object-cover"
-                    alt={`scroll-img-${idx}`}
-                    />
-                ))}
-                </div>
-
-                <div className="absolute bottom-4 left-4 z-10">
-                <p className="text-4xl text-white lg:text-textColor font-bold lg:group-hover:text-white lg:group-hover:text-5xl transition-all duration-700">Photo Frames</p>
-                </div>
-            </div>
-        </div>
-
-     </div>
-
-
-        
-</section>
-}
+      </section>
+    );
+  }
+  

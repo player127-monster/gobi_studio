@@ -14,7 +14,7 @@ const NewArrival = () => {
     return<section id='new' className="flex flex-col w-full">
 
         <div className='group w-full p-10 md:p-20'>
-            <p className="text-2xl md:text-6xl text-white font-bold items-start group-hover:text-green-300 group-hover:text-7xl transition-all duration-700">Sublimation Printing</p>
+            <p className="text-2xl md:text-6xl text-white font-bold items-start lg:group-hover:text-green-300 lg:group-hover:text-7xl transition-all duration-700">Sublimation Printing</p>
         </div>
         
     <div className="w-full">
@@ -34,7 +34,7 @@ const NewArrival = () => {
 
           {/* Scrollable content section */}
           <div className='w-full overflow-hidden'>
-        <div className="bg-primary text-textColor min-h-[60vh] flex flex-row gap-5 items-center h-[700px] justify-center px-10 py-20 animate-scroll-horizontal">
+        <div className="bg-primary text-textColor min-h-[60vh] flex lg:flex-row gap-1 lg:gap-5 items-center h-[700px] justify-center lg:px-10 py-20 lg:animate-scroll-horizontal">
                             {[mug1,mug2,mug3,mug1,mug2,mug3,mug1,mug2].map((img, idx) => (
                                 <img
                                 key={idx}
@@ -66,7 +66,7 @@ const NewArrival = () => {
 
           {/* Scrollable content section */}
           <div className='w-full overflow-hidden'>
-          <div className="bg-primary text-textColor min-h-[60vh] flex flex-row gap-5 items-center h-[700px] justify-center px-10 py-20 animate-scroll-horizontal">
+          <div className="bg-primary text-textColor min-h-[60vh] flex lg:flex-row gap-1 lg:gap-5 items-center h-[700px] justify-center lg:px-10 py-20 lg:animate-scroll-horizontal">
                             {[pen1,pen2,pen1,pen2,pen1,pen2].map((img, idx) => (
                                 <img
                                 key={idx}
@@ -98,7 +98,7 @@ const NewArrival = () => {
 
           {/* Scrollable content section */}
           <div className='w-full overflow-hidden'>
-          <div className="bg-primary text-textColor min-h-[60vh] flex flex-row gap-5 items-center h-[700px] justify-center px-10 py-20 animate-scroll-horizontal ">
+          <div className="bg-primary text-textColor min-h-[60vh] flex lg:flex-row gap-1 lg:gap-5 items-center h-[700px] justify-center lg:px-10 py-20 lg:animate-scroll-horizontal">
                             {[tile1,tile2,tile1,tile2,tile1,tile2].map((img, idx) => (
                                 <img
                                 key={idx}

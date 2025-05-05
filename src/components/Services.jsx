@@ -1,25 +1,25 @@
 
 import frame1 from '../assets/Services/frame1.avif';
-import frame2 from '../assets/Services/frame2.jpg';
-import frame3 from '../assets/Services/frame3.jpg';
+import frame2 from '../assets/Services/frame2.avif';
+import frame3 from '../assets/Services/frame3.avif';
 import model1 from '../assets/Services/model1.webp';
-import model2 from '../assets/Services/model2.jpg';
-import model3 from '../assets/Services/model3.jpg';
-import portrait1 from '../assets/Services/portrait.jpg';
-import portrait2 from '../assets/Services/portrait1.jpg';
-import prewed1 from '../assets/Services/prewed1.jpg';
-import prewed2 from '../assets/Services/prewed2.jpg';
+import model2 from '../assets/Services/model2.avif';
+import model3 from '../assets/Services/model3.avif';
+import portrait1 from '../assets/Services/portrait.avif';
+import portrait2 from '../assets/Services/portrait1.avif';
+import prewed1 from '../assets/Services/prewed1.avif';
+import prewed2 from '../assets/Services/prewed2.avif';
 import prewed3 from '../assets/Services/prewed3.avif';
-import product1 from '../assets/Services/product1.jpg';
-import product2 from '../assets/Services/product2.jpg';
-import product3 from '../assets/Services/product3.jpg';
-import wed1 from '../assets/Services/wed1.jpg';
-import wed2 from '../assets/Services/wed2.jpg';
-import wed3 from '../assets/Services/wed3.jpg';
+import product1 from '../assets/Services/product1.avif';
+import product2 from '../assets/Services/product2.avif';
+import product3 from '../assets/Services/product3.avif';
+import wed1 from '../assets/Services/wed1.avif';
+import wed2 from '../assets/Services/wed2.avif';
+import wed3 from '../assets/Services/wed3.avif';
 import grad1 from '../assets/Services/grad1.avif';
 import grad2 from '../assets/Services/grad2.avif';
-import grad3 from '../assets/Services/grad3.jpg';
-import grad4 from '../assets/Services/grad4.jpg';
+import grad3 from '../assets/Services/grad3.avif';
+import grad4 from '../assets/Services/grad4.avif';
 
 
 export default function Services(){
@@ -29,7 +29,7 @@ export default function Services(){
 
         {/* Title */}
         <div className="group w-full md:col-span-4 md:row-span-1 md:flex md:items-center pt-10 md:pb-5">
-        <p className="text-4xl md:text-6xl text-white md:text-textColor font-bold items-start md:group-hover:text-white md:group-hover:text-7xl transition-all duration-700">Our Services</p>
+        <p className="text-4xl md:text-6xl text-white lg:text-textColor font-bold items-start lg:group-hover:text-white lg:group-hover:text-7xl transition-all duration-700">Our Services</p>
         </div>
 
         {/* Top Right Image */}
@@ -40,6 +40,7 @@ export default function Services(){
                     <img
                     key={idx}
                     src={img}
+                    loading='lazy'
                     className="w-[16.66%] h-[400px] object-cover"
                     alt={`scroll-img-${idx}`}
                     />
@@ -47,7 +48,7 @@ export default function Services(){
                 </div>
 
                 <div className="absolute bottom-4 left-4 z-10">
-                <p className="text-4xl text-white md:text-textColor font-bold group-hover:text-white group-hover:text-5xl transition-all duration-700">Model Shoot</p>
+                <p className="text-4xl text-white md:text-textColor font-bold lg:group-hover:text-white lg:group-hover:text-5xl transition-all duration-700">Model Shoot</p>
                 </div>
             </div>
         </div>
@@ -61,6 +62,7 @@ export default function Services(){
                     <img
                     key={idx}
                     src={img}
+                    loading='lazy'
                     className="w-[18.66%] h-[600px] object-cover"
                     alt={`scroll-img-${idx}`}
                     />
@@ -68,7 +70,7 @@ export default function Services(){
                 </div>
 
                 <div className="absolute bottom-4 left-4 z-10">
-                <p className="text-4xl text-white md:text-textColor font-bold group-hover:text-white group-hover:text-5xl transition-all duration-700">Wedding Shoot</p>
+                <p className="text-4xl text-white md:text-textColor font-bold lg:group-hover:text-white lg:group-hover:text-5xl transition-all duration-700">Wedding Shoot</p>
                 </div>
             </div>
         </div>
@@ -81,6 +83,7 @@ export default function Services(){
                     <img
                     key={idx}
                     src={img}
+                    loading='lazy'
                     className="w-[50%] h-[700px] object-cover"
                     alt={`scroll-img-${idx}`}
                     />
@@ -88,7 +91,7 @@ export default function Services(){
                 </div>
 
                 <div className="absolute bottom-4 left-4 z-10">
-                <p className="text-4xl text-white md:text-textColor font-bold group-hover:text-white group-hover:text-5xl transition-all duration-700">Portraits</p>
+                <p className="text-4xl text-white md:text-textColor font-bold lg:group-hover:text-white lg:group-hover:text-5xl transition-all duration-700">Portraits</p>
                 </div>
             </div>
         </div>
@@ -101,6 +104,7 @@ export default function Services(){
                     <img
                     key={idx}
                     src={img}
+                    loading='lazy'
                     className="w-[20.66%] h-[700px] object-cover"
                     alt={`scroll-img-${idx}`}
                     />
@@ -108,7 +112,7 @@ export default function Services(){
                 </div>
 
                 <div className="absolute bottom-4 left-4 z-10 ">
-                <p className="text-4xl text-white md:text-textColor font-bold group-hover:text-white group-hover:text-5xl transition-all duration-700">Graduation Shoot</p>
+                <p className="text-4xl text-white md:text-textColor font-bold lg:group-hover:text-white lg:group-hover:text-5xl transition-all duration-700">Graduation Shoot</p>
                 </div>
             </div>
         </div>
@@ -121,6 +125,7 @@ export default function Services(){
                     <img
                     key={idx}
                     src={img}
+                    loading='lazy'
                     className="w-[50.66%] h-[800px] object-cover"
                     alt={`scroll-img-${idx}`}
                     />
@@ -128,7 +133,7 @@ export default function Services(){
                 </div>
 
                 <div className="absolute bottom-4 left-4 z-10">
-                <p className="text-4xl text-white md:text-textColor font-bold group-hover:text-white group-hover:text-5xl transition-all duration-700">Pre-Wedding Shoot</p>
+                <p className="text-4xl text-white md:text-textColor font-bold lg:group-hover:text-white lg:group-hover:text-5xl transition-all duration-700">Pre-Wedding Shoot</p>
                 </div>
             </div>
         </div>
@@ -141,6 +146,7 @@ export default function Services(){
                     <img
                     key={idx}
                     src={img}
+                    loading='lazy'
                     className="w-[30.66%] h-[700px] object-cover"
                     alt={`scroll-img-${idx}`}
                     />
@@ -148,7 +154,7 @@ export default function Services(){
                 </div>
 
                 <div className="absolute bottom-4 left-4 z-10 ">
-                <p className="text-4xl text-white md:text-textColor font-bold group-hover:text-white group-hover:text-5xl transition-all duration-700">Product Shoot</p>
+                <p className="text-4xl text-white md:text-textColor font-bold lg:group-hover:text-white lg:group-hover:text-5xl transition-all duration-700">Product Shoot</p>
                 </div>
             </div>
         </div>
@@ -161,6 +167,7 @@ export default function Services(){
                     <img
                     key={idx}
                     src={img}
+                    loading='lazy'
                     className="w-[16.66%] h-[300px] object-cover"
                     alt={`scroll-img-${idx}`}
                     />
@@ -168,7 +175,7 @@ export default function Services(){
                 </div>
 
                 <div className="absolute bottom-4 left-4 z-10">
-                <p className="text-4xl text-white md:text-textColor font-bold group-hover:text-white group-hover:text-5xl transition-all duration-700">Photo Frames</p>
+                <p className="text-4xl text-white lg:text-textColor font-bold lg:group-hover:text-white lg:group-hover:text-5xl transition-all duration-700">Photo Frames</p>
                 </div>
             </div>
         </div>

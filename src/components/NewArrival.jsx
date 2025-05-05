@@ -1,12 +1,12 @@
 
-import mug from '../assets/Services/mug.jpg';
-import mug1 from '../assets/Services/mug1.jpg';
+import mug from '../assets/Services/mug.avif';
+import mug1 from '../assets/Services/mug1.avif';
 import mug2 from '../assets/Services/mug2.webp';
 import mug3 from '../assets/Services/mug3.webp';
-import pen1 from '../assets/Services/pen1.jpg';
+import pen1 from '../assets/Services/pen1.avif';
 import pen2 from '../assets/Services/pen2.avif';
-import tile1 from '../assets/Services/tile1.jpg';
-import tile2 from '../assets/Services/tile2.jpg';
+import tile1 from '../assets/Services/tile1.avif';
+import tile2 from '../assets/Services/tile2.avif';
 
 const NewArrival = () => {
 
@@ -39,6 +39,7 @@ const NewArrival = () => {
                                 <img
                                 key={idx}
                                 src={img}
+                                loading='lazy'
                                 className="w-[50%] h-[500px] object-cover"
                                 alt={`scroll-img-${idx}`}
                                 />
@@ -70,6 +71,7 @@ const NewArrival = () => {
                                 <img
                                 key={idx}
                                 src={img}
+                                loading='lazy'
                                 className="w-[50%] h-[450px] md:h-auto rounded-2xl object-cover"
                                 alt={`scroll-img-${idx}`}
                                 />
@@ -101,6 +103,7 @@ const NewArrival = () => {
                                 <img
                                 key={idx}
                                 src={img}
+                                loading='lazy'
                                 className="w-[50%] h-[500px] object-cover"
                                 alt={`scroll-img-${idx}`}
                                 />

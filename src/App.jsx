@@ -21,7 +21,6 @@ function App() {
       <Services/>
       <OurWorks/>
       <NewArrival/>
-      <Reviews/>
       <Info/>
       <Footer name={shopName}/>
     </BrowserRouter>

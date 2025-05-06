@@ -2,15 +2,15 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}"
+    "./src/**/*.{js,ts,jsx,tsx,html}"
   ],
   theme: {
     extend: {
       colors: {
         primary: 'oklch(13% 0.028 261.692)',
-        secondary: 'oklch(30% 0.04 200)',      // example fallback
-        highlight: 'oklch(90% 0.1 40)',        // example fallback
-        textColor: 'oklch(55.1% 0.027 264.364)'
+        secondary: 'oklch(30% 0.04 200)',
+        highlight: 'oklch(90% 0.1 40)',
+        textColor: 'oklch(55.1% 0.027 264.364)',
       },
       fontFamily: {
         sans: ['Montserrat', 'sans-serif'],
@@ -20,7 +20,6 @@ export default {
       },
       animation: {
         'scroll-horizontal': 'scroll-horizontal 30s linear infinite',
-        
       },
       keyframes: {
         'scroll-horizontal': {
@@ -31,7 +30,7 @@ export default {
       screens: {
         'iphone7': '375px',
       },
-    }
+    },
   },
   plugins: [],
 }

@@ -14,7 +14,7 @@ function App() {
   const shopName="Gobi Studio"
 
   return (
-    <BrowserRouter basename="/gobi_studio">
+    <BrowserRouter basename="/">
       <Header name={shopName}/>
       <Home name={shopName}/>
       <About name={shopName}/>

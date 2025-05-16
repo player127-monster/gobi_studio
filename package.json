@@ -1,24 +1,19 @@
 {
   "name": "gobi_studio",
   "private": true,
-  "homepage": "https://player127-monster.github.io/gobi_studio/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "prod": "cross-env NODE_ENV=production vite build",
     "lint": "eslint .",
-    "preview": "vite preview",
-    "predeploy": "npm run prod",
-    "deploy": "gh-pages -d dist"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
     "@splinetool/react-spline": "^4.0.0",
     "@splinetool/runtime": "^1.9.89",
     "cssnano": "^7.0.6",
-    "gh-pages": "^6.3.0",
     "lucide-react": "^0.503.0",
     "react": "^19.0.0",
     "react-dom": "^19.1.0",

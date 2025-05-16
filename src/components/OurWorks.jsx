@@ -16,8 +16,8 @@ import grad2 from '../assets/Services/grad2.avif';
 import grad3 from '../assets/Services/grad3.avif';
 import grad4 from '../assets/Services/grad4.avif';
 
-import work1 from '../assets/Services/works1.avif';
-import mug from '../assets/Services/mug.avif';
+import work1 from '../assets/Services/works1.jpg';
+import mug from '../assets/Services/mug.jpg';
 
 export default function Works(){
 

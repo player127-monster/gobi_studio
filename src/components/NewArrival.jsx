@@ -1,5 +1,5 @@
 
-import mug from '../assets/Services/mug.avif';
+import mug from '../assets/Services/mug.jpg';
 import mug1 from '../assets/Services/mug1.avif';
 import mug2 from '../assets/Services/mug2.webp';
 import mug3 from '../assets/Services/mug3.webp';

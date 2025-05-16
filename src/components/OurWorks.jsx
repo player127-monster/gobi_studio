@@ -48,7 +48,7 @@ export default function Works(){
         <img src={work1} loading='lazy' alt="Wedding Shoot" className="col-span-3 w-full h-[230px] rounded-3xl lg:hover:scale-110 transition-all duration-500"></img>
         {
             works.map((work,index)=>(
-                <img key={index} loading='lazy' src={work.src} alt={work.name} className="w-full object-cover h-[230px] rounded-3xl lg:hover:scale-125 transition-all duration-500"></img>
+                <img key={index} loading='lazy' src={work.src} alt={work.name} className="w-full object-cover h-[230px] rounded-3xl lg:hover:scale-110 transition-all duration-500"></img>
             ))
         }
         <img src={mug} loading='lazy' alt="Sublimation printing" className="col-span-2 w-full h-[230px] rounded-3xl lg:hover:scale-125 transition-all duration-500"></img>

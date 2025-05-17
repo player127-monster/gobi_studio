@@ -85,8 +85,8 @@ export default function Header() {
 
       {/* Mobile Dropdown Menu */}
       <div
-        className={`md:hidden overflow-hidden bg-primary rounded-xl px-5 transition-all duration-500 ease-in-out ${
-          toggleMenu ? "max-h-[250px] py-4 mt-2" : "max-h-0"
+        className={`md:hidden overflow-hidden bg-primary rounded-xl px-5 transition-all duration-500 ease-in-out flex flex-col gap-2 text-xl ${
+          toggleMenu ? "max-h-[250px] py-5 mt-2" : "max-h-0"
         }`}
       >
         {navLinks.map((navLink, index) => (

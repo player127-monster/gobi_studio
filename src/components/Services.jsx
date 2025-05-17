@@ -25,7 +25,7 @@ import grad4 from '../assets/Services/grad4.avif';
 function ServiceCarousel({ title, images, height, imageWidth }) {
   return (
     <div className="group bg-white w-full relative overflow-hidden rounded-xl">
-      <div className="flex w-[200%] animate-scroll-horizontal">
+      <div className="flex w-[200%] md:animate-scroll-horizontal">
         {[...images, ...images].map((img, idx) => (
           <img
             key={idx}

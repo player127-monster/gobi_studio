@@ -38,7 +38,7 @@ export default function Header() {
           duration={600}
           offset={-70}
           onClick={() => isMobile && setToggleMenu(false)}
-          className={`${navLink.href === "new" ? "text-green-500 hover:text-red-500" : "text-navText hover:text-white"} cursor-pointer px-8 py-1 rounded-xl text-xl font-bold lg:hover:scale-110 transition-all duration-700`}
+          className={`${navLink.href === "new" ? "text-green-500 hover:text-red-500" : "text-navText hover:text-white"} cursor-pointer md:px-2 xl:px-8 py-1 rounded-xl md:text-sm xl:text-xl font-bold lg:hover:scale-110 transition-all duration-700`}
         >
           {navLink.label}
         </ScrollLink>
@@ -48,7 +48,7 @@ export default function Header() {
             handleScrollNav(navLink.href);
             isMobile && setToggleMenu(false);
           }}
-          className="cursor-pointer px-8 py-1 text-navText text-xl font-bold hover:text-white transition-all duration-700"
+          className="cursor-pointer md:px-2 xl:px-8 py-1 text-navText font-bold md:text-sm xl:text-xl hover:text-white transition-all duration-700"
         >
           {navLink.label}
         </span>
@@ -58,7 +58,7 @@ export default function Header() {
         <RouterLink
           to={navLink.href}
           onClick={() => isMobile && setToggleMenu(false)}
-          className={`${navLink.href === "/new" ? "text-green-500 hover:text-red-500" : "text-navText hover:text-white"}text-navText hover:text-white cursor-pointer md:px-2 xl:px-8 py-1 rounded-xl text-xl font-bold lg:hover:scale-110 transition-all duration-700`}
+          className={`${navLink.href === "/new" ? "text-green-500 hover:text-red-500" : "text-navText hover:text-white"}text-navText hover:text-white cursor-pointer md:px-2 xl:px-8 py-1 rounded-xl md:text-sm xl:text-xl font-bold lg:hover:scale-110 transition-all duration-700`}
         >
           {navLink.label}
         </RouterLink>

@@ -68,7 +68,7 @@ export default function About() {
                 <img
                     src={Gobi}
                     alt="Gobi Studio - Gobi"
-                    className='w-[80%] object-cover lg:object-fill h-[450px] md:w-[58%] md:h-[550px] rounded-xl md:ml-10 md:hover:scale-105 transition-all duration-500'
+                    className='w-[80%] object-cover lg:object-fill h-[350px] md:w-[58%] md:h-[550px] rounded-xl md:ml-10 md:hover:scale-105 transition-all duration-500'
                 />
             </div>
         </section>

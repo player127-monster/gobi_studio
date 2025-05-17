@@ -3,7 +3,7 @@ import Spline from '@splinetool/react-spline';
 export default function Home(props){
     
     return <section id='home' className="flex bg-primary flex-col md:flex-row justify-center">
-       <div className="flex flex-col justify-center h-[700px] pt-44 pb-6 gap-4 z-10">
+       <div className="flex flex-col justify-center h-[700px] pt-16 lg:pt-44 pb-6 gap-4 z-10">
             <div className="group relative">
                 <p className="text-5xl md:text-9xl text-center text-white md:text-textColor font-bold uppercase 
                    transition-all duration-700 ease-in-out 
@@ -24,7 +24,7 @@ export default function Home(props){
 
 
         {/* Spline 3D Background */}
-            <div className="absolute -top-10 w-full h-[700px] z-0 pointer-events-none">
+            <div className="absolute hidden lg:block -top-10 w-full h-[700px] z-0 pointer-events-none">
             <Spline scene="https://prod.spline.design/HUEsevAbPUK3hGU6/scene.splinecode" />
             </div>
 

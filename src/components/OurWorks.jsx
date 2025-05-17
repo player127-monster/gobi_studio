@@ -45,13 +45,13 @@ export default function Works(){
             <p className="text-2xl text-white md:text-6xl md:text-textColor font-bold items-start group-hover:text-white group-hover:text-7xl transition-all duration-500">Our Works</p>
         </div>
         <div className='p-2 md:p-5 pb-10 grid md:grid-cols-7 gap-4 py-3'>
-        <img src={work1} loading='lazy' alt="Wedding Shoot" className="col-span-3 w-full h-[230px] rounded-3xl lg:hover:scale-110 transition-all duration-500"></img>
+        <img src={work1} loading='lazy' alt="Wedding Shoot" className="col-span-3 w-full h-[210px] rounded-3xl lg:hover:scale-110 transition-all duration-500"></img>
         {
             works.map((work,index)=>(
-                <img key={index} loading='lazy' src={work.src} alt={work.name} className="w-full object-cover h-[230px] rounded-3xl lg:hover:scale-110 transition-all duration-500"></img>
+                <img key={index} loading='lazy' src={work.src} alt={work.name} className="w-full object-cover h-[210px] rounded-3xl lg:hover:scale-110 transition-all duration-500"></img>
             ))
         }
-        <img src={mug} loading='lazy' alt="Sublimation printing" className="col-span-2 w-full h-[230px] rounded-3xl lg:hover:scale-125 transition-all duration-500"></img>
+        <img src={mug} loading='lazy' alt="Sublimation printing" className="col-span-2 w-full h-[210px] rounded-3xl lg:hover:scale-125 transition-all duration-500"></img>
         
         </div>
         

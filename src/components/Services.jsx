@@ -20,8 +20,6 @@ import grad2 from '../assets/Services/grad2.avif';
 import grad3 from '../assets/Services/grad3.avif';
 import grad4 from '../assets/Services/grad4.avif';
 
-
-  
 function ServiceCarousel({ title, images, height, imageWidth }) {
   return (
     <div className="group bg-white w-full relative overflow-hidden rounded-xl">
@@ -31,6 +29,7 @@ function ServiceCarousel({ title, images, height, imageWidth }) {
             key={idx}
             src={img}
             loading="lazy"
+            decoding="async"
             className={`${imageWidth} object-cover`}
             style={{ height: `${height}px` }}
             alt={`${title} image ${idx + 1}`}
@@ -46,52 +45,83 @@ function ServiceCarousel({ title, images, height, imageWidth }) {
   );
 }
 
+const servicesData = [
+  {
+    id: "model-shoot",
+    title: "Model Shoot",
+    images: [model1, model2, model3],
+    height: 400,
+    imageWidth: "w-1/6",
+  },
+  {
+    id: "wedding-shoot",
+    title: "Wedding Shoot",
+    images: [wed1, wed2, wed3],
+    height: 550,
+    imageWidth: "w-1/5",
+  },
+  {
+    id: "commercial-shoot",
+    title: "Portraits",
+    images: [portrait1, portrait2],
+    height: 500,
+    imageWidth: "w-1/2",
+  },
+  {
+    id: "graduation-shoot",
+    title: "Graduation Shoot",
+    images: [grad1, grad2, grad3, grad4],
+    height: 500,
+    imageWidth: "w-1/5",
+  },
+  {
+    id: "pre-wedding-shoot",
+    title: "Pre-Wedding Shoot",
+    images: [prewed1, prewed2, prewed3],
+    height: 500,
+    imageWidth: "w-1/2",
+  },
+  {
+    id: "product-shoot",
+    title: "Product Shoot",
+    images: [product1, product2, product3],
+    height: 565,
+    imageWidth: "w-1/3",
+  },
+  {
+    id: "photo-frames",
+    title: "Photo Frames",
+    images: [frame1, frame2, frame3],
+    height: 300,
+    imageWidth: "w-1/6",
+  },
+];
 
-  
+export default function Services() {
+  return (
+    <section id="services" className="p-5 pt-0 text-textColor">
+      <div className="flex flex-col gap-5 md:grid w-full md:grid-cols-8 md:gap-10 px-0 md:px-4 md:py-6">
 
-  export default function Services() {
-    return (
-      <section id="services" className="p-5 pt-0 text-textColor">
-        <div className="flex flex-col gap-5 md:grid w-full md:grid-cols-8 md:gap-10 px-0 md:px-4 md:py-6">
-  
-          {/* Title */}
-          <div className="group w-full md:col-span-4 md:row-span-1 md:flex md:items-center pt-10 md:pb-5">
-            <p className="text-4xl md:text-6xl text-white lg:text-textColor font-bold lg:group-hover:text-white lg:group-hover:text-7xl transition-all duration-700">
-              Our Services
-            </p>
-          </div>
-  
-          {/* Service Carousels */}
-          <div className="md:col-span-4 row-span-2 pt-5" id="model-shoot">
-            <ServiceCarousel title="Model Shoot" images={[model1, model2, model3]} height={400} imageWidth="w-1/6" />
-          </div>
-  
-          <div className="md:col-span-4 row-span-2" id="wedding-shoot">
-            <ServiceCarousel title="Wedding Shoot" images={[wed1, wed2, wed3]} height={550} imageWidth="w-1/5" />
-          </div>
-  
-          <div className="md:col-span-4 row-span-2 pt-0" id="commercial-shoot">
-            <ServiceCarousel title="Portraits" images={[portrait1, portrait2]} height={500} imageWidth="w-1/2" />
-          </div>
-  
-          <div className="col-span-4 row-span-2" id="graduation-shoot">
-            <ServiceCarousel title="Graduation Shoot" images={[grad1, grad2, grad3, grad4]} height={500} imageWidth="w-1/5" />
-          </div>
-  
-          <div className="col-span-4 row-span-2" id="pre-wedding-shoot">
-            <ServiceCarousel title="Pre-Wedding Shoot" images={[prewed1, prewed2, prewed3]} height={500} imageWidth="w-1/2" />
-          </div>
-  
-          <div className="col-span-4 row-span-2" id="product-shoot">
-            <ServiceCarousel title="Product Shoot" images={[product1, product2, product3]} height={565} imageWidth="w-1/3" />
-          </div>
-  
-          <div className="col-span-4">
-            <ServiceCarousel title="Photo Frames" images={[frame1, frame2, frame3]} height={300} imageWidth="w-1/6" />
-          </div>
-  
+        {/* Section Title */}
+        <div className="group w-full md:col-span-4 md:row-span-1 md:flex md:items-center pt-10 md:pb-5">
+          <p className="text-4xl md:text-6xl text-white lg:text-textColor font-bold lg:group-hover:text-white lg:group-hover:text-7xl transition-all duration-700">
+            Our Services
+          </p>
         </div>
-      </section>
-    );
-  }
-  
+
+        {/* Dynamic Carousels */}
+        {servicesData.map(({ id, title, images, height, imageWidth }) => (
+          <div key={id} id={id} className="md:col-span-4 row-span-2">
+            <ServiceCarousel
+              title={title}
+              images={images}
+              height={height}
+              imageWidth={imageWidth}
+            />
+          </div>
+        ))}
+
+      </div>
+    </section>
+  );
+}

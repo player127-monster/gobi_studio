@@ -64,7 +64,7 @@ export default function About() {
                 </div>
             </div>
 
-            <div className='w-full md:w-1/2 flex justify-center p-5'>
+            <div className='w-full md:w-1/2 flex justify-center p-5 pt-14 lg:pt-0'>
                 <img
                     src={Gobi}
                     alt="Gobi Studio - Gobi"

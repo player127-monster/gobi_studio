@@ -40,9 +40,9 @@ export default function Works(){
         {src:`${wed3}`,name:"Wedding"},
     ]
 
-    return<section id="works" className="felx flex-col md:flex-row pt-24 p-2 md:p-10">
+    return<section id="works" className="felx flex-col md:flex-row pt-7 p-2 md:p-5">
         <div className="group w-full flex md:pb-5 px-0">
-            <p className="text-2xl text-white md:text-6xl md:text-textColor font-bold items-start group-hover:text-white group-hover:text-7xl transition-all duration-500">Our Works</p>
+            <p className="text-4xl text-white md:text-6xl md:text-textColor font-bold items-start group-hover:text-white group-hover:text-7xl transition-all duration-500">Our Works</p>
         </div>
         <div className='p-2 md:p-5 pb-10 grid md:grid-cols-7 gap-4 py-3'>
         <img src={work1} loading='lazy' alt="Wedding Shoot" className="col-span-3 w-full h-[210px] rounded-3xl lg:hover:scale-110 transition-all duration-500"></img>

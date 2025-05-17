@@ -1,11 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { lazy, Suspense } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import HomePage from './pages/Homepage';
-import Services from './components/Services';
-import OurWorks from './components/OurWorks';
-import NewArrival from './components/NewArrival';
 
+// Lazy load route components
+const HomePage = lazy(() => import('./pages/Homepage'));
+const Services = lazy(() => import('./components/Services'));
+const OurWorks = lazy(() => import('./components/OurWorks'));
+const NewArrival = lazy(() => import('./components/NewArrival'));
 
 function App() {
   const shopName = "Gobi Studio";
@@ -13,12 +15,19 @@ function App() {
   return (
     <Router basename="/">
       <Header />
-      <Routes>
-        <Route path="/" element={<HomePage shopName={shopName} />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/explore" element={<OurWorks />} />
-        <Route path="/new" element={<NewArrival />} />
-      </Routes>
+
+      <Suspense fallback={<div className="text-center p-10 text-xl">Loading...</div>}>
+        <Routes>
+          {/* Home route (scroll-based for sections like Home, About, Contact) */}
+          <Route path="/" element={<HomePage shopName={shopName} />} />
+
+          {/* Separate route pages */}
+          <Route path="/services" element={<Services />} />
+          <Route path="/explore" element={<OurWorks />} />
+          <Route path="/new" element={<NewArrival />} />
+        </Routes>
+      </Suspense>
+
       <Footer name={shopName} />
     </Router>
   );

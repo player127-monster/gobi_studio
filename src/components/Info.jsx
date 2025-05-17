@@ -11,7 +11,7 @@ export default function Info(){
     const whatsNO="Whatsapp :0777-654027";
     const paraInfo="Gobi Studio is a premier photography studio conveniently located in Watawala Town, offering easy accessibility and exceptional service to clients from all walks of life.";
 
-    return<section id="contact" className="flex flex-col md:flex-row justify-center gap-10 p-5 pb-10">
+    return<section id="contact" className="flex flex-col md:flex-row justify-center gap-10 p-5 pt-5 pb-10">
         <div className="flex flex-col w-full md:w-[23%] text-justify font-sriracha items-center md:items-start">
             <img src={logo} alt="Logo" className="w-44 h-48 md:w-32 md:h-32 rounded-full p-3 md:p-5 -ml-8"></img>
             <p className="">{paraInfo}</p>
@@ -21,8 +21,8 @@ export default function Info(){
             
         </div>
         
-        <div className="flex w-full md:w-[25%]  justify-center rounded-2xl">
-            <img src={camera} alt="Logo" className="pb-3 py-8 h-[300px] rounded-2xl w-[70%]"></img>
+        <div className="flex md:w-[25%]  justify-center">
+            <img src={camera} alt="Logo" className="pb-3 py-8 h-72 lg:h-[300px] object-contain rounded-3xl w-56 lg:w-[70%]"></img>
             
         </div>
         

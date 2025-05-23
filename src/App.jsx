@@ -16,7 +16,7 @@ function App() {
     <Router basename="/">
       <Header />
 
-      <Suspense fallback={<div className="text-center p-10 text-xl">Loading...</div>}>
+      <Suspense fallback={<div className="h-96 w-full text-center p-10 text-xl">Loading...</div>}>
         <Routes>
           {/* Home route (scroll-based for sections like Home, About, Contact) */}
           <Route path="/" element={<HomePage shopName={shopName} />} />
